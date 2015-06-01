@@ -151,6 +151,12 @@ Copyright (C) Microsoft Corporation. All rights reserved.
       <_BclBuildProjectReferenceProperties Condition="'$(SkipValidatePackageReferences)' != ''">$(_BclBuildProjectReferenceProperties);SkipValidatePackageReferences=$(SkipValidatePackageReferences)</_BclBuildProjectReferenceProperties>
     </PropertyGroup>
 
+    <Message Text="BclBuildAddProjectReferenceProperties in" />
+    <Message Text="_BclBuildProjectReferenceProperties = $(_BclBuildProjectReferenceProperties)" />
+    <Message Text="BclBuildReferencingProject = $(BclBuildReferencingProject)" />
+    <Message Text="BclBuildReferencingProjectConfig = $(BclBuildReferencingProjectConfig)" />
+    <Message Text="BclBuildAddProjectReferenceProperties out" />
+    
     <ItemGroup>
       <ProjectReference>      
          <AdditionalProperties>$(_BclBuildProjectReferenceProperties);%(ProjectReference.AdditionalProperties)</AdditionalProperties>
