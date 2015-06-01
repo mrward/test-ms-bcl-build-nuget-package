@@ -240,11 +240,6 @@ Copyright (C) Microsoft Corporation. All rights reserved.
       <ValidatePackages Include="Microsoft.Net.Http"/>
     </ItemGroup>
 
-    <Message Text="BclBuildReferencingProject = $(BclBuildReferencingProject)" />
-    <Message Text="BclBuildReferencingProjectConfig = $(BclBuildReferencingProjectConfig)" />
-    <Message Text="ReferencedProject = $(MSBuildProjectFullPath)" />
-    <Message Text="ReferencedProjectPackagesConfig = $(MSBuildProjectDirectory)\packages.config" />
-
     <ValidatePackageReferences Packages="@(ValidatePackages)"
                                ReferencingProject="$(BclBuildReferencingProject)"
                                ReferencingProjectPackagesConfig="$(BclBuildReferencingProjectConfig)"
